@@ -36,7 +36,10 @@ describe('About our Game', () => {
       game.makeGuess(2);
       expect(game.guesses).to.equal(1);
     });
-    // it('should ')
+    it('should remove a correct guess from the path', () => {
+      game.makeGuess(0)
+      expect(game.path[0]).to.equal(1);
+    })
   });
 
 });
