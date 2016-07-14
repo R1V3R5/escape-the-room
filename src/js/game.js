@@ -8,15 +8,13 @@ class Game {
   }
 
   makeGuess (guess) {
-    if (this.path.length === 0) {
+    if (this.path.length === 0 || this.guesses === 20) {
       this.gameOver = true;
       alert('Game over!');
       return;
     }
     if (guess === this.path[0]) {
       this.path.shift()
-      // this.path.reverse().pop()
-      // this.path.reverse()
     } else {
     this.guesses ++;
     }
