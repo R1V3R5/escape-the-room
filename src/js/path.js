@@ -1,8 +1,5 @@
-// 0 is up
-// 1 is right
-// 2 is down
-// 3 is left
 import _ from 'lodash';
+
 let testPath = [
   [0,1,2,3,0,1,2,3,0,1]
 ]

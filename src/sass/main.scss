@@ -1,7 +1,9 @@
 @import "bulma";
 $border: 1px solid black;
 $background: #007ACC;
-
+body {
+  font-size: 62.5%;
+}
 
 .path {
   width: 506px;
@@ -51,4 +53,51 @@ $background: #007ACC;
     bottom: 200px;
     background: $background;
   }    
+  .roomNumber {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: $border;
+    top: 220px;
+    left: 230px;
+  }
+}
+.roomNumber {
+  font-size: 4.0em;
+}
+
+.pathway {
+  margin: 0 auto;
+  font-size: 3.0em;
+}
+
+.room1 {
+  background: #FDBD41;
+}
+.room2 {
+  background: red;
+}
+.room3 {
+  background: #ADB;
+}
+.room4 {
+  background: #FDF;
+}
+.room5 {
+  background: #FAF;
+}
+.room6 {
+  background: green;
+}
+.room7 {
+  background: yellow;
+}
+.room8 {
+  background: purple;
+}
+.room9 {
+  background: blanchedalmond;
+}
+.room0 {
+  background: seagreen;
 }

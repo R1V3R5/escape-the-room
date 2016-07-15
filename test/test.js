@@ -39,7 +39,12 @@ describe('About our Game', () => {
     it('should remove a correct guess from the path', () => {
       game.makeGuess(0)
       expect(game.path[0]).to.equal(1);
-    })
+    });
+    // it('should alert game over if guesses is 20', () => {
+      // game.guesses = 20;
+      // game.makeGuess(2);
+      // expect(game.gameOver).to.be(true);
+    // })
   });
 
 });

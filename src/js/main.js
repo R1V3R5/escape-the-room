@@ -3,28 +3,17 @@ import _ from 'lodash';
 import { path, testPath } from './path'
 import { Game } from './game'
 
-
-
-// console.log(path)
-
-// for(let i=0; i<10; i++) {
-//   path.reverse().pop()
-//   path.reverse()
-//   console.log(path)
-// }
-
 let game = new Game(path)
 
-
 console.log(game.path)
-// debugger;
-// debugger;
 
 const up = $('.pathUp');
 const right = $('.pathRight')
 const down = $('.pathDown')
 const left = $('.pathLeft')
 
+// $('.roomNumber').html(game.path.length)
+$('.pathway').html(game.path)
 // keystroke 38
 up.on('click', function () {
   // console.log('clicked!');
@@ -47,7 +36,6 @@ left.on('click', function () {
 });
 
 document.addEventListener('keydown', function(event) {
-  // console.log(event.which)
 
   let keystroke = event.which
 
@@ -60,5 +48,4 @@ document.addEventListener('keydown', function(event) {
   } else if (keystroke === 37) {
     game.makeGuess(3)
   }
-})
-
+});

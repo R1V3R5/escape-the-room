@@ -4,7 +4,7 @@
   "description": "This is a basic starter template.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register || true",
+    "test": "mocha --watch --compilers js:babel-register || true",
     "deploy": "surge -p \"$(npm prefix)/app\" -d \"tiy-$(whoami | tr '[:upper:]' '[:lower:]')-${PWD##*/}.surge.sh\"",
     "lint": "eslint src/js || true"
   },
