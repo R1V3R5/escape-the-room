@@ -13,7 +13,7 @@ const down = $('.pathDown')
 const left = $('.pathLeft')
 
 // $('.roomNumber').html(game.path.length)
-$('.pathway').html(game.path)
+// $('.pathway').html(game.path)
 // keystroke 38
 up.on('click', function () {
   // console.log('clicked!');

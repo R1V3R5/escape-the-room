@@ -17,7 +17,7 @@ class Game {
       left.off('click');
       right.off('click');
       // document.removeEventListener('keydown', function(event){ event.which }, false)
-      alert('You Win!');
+      $('.roomsLeft').html('You WIN!')
       return;
     } else if (this.guesses === 20){
       this.gameOver = true;
@@ -32,10 +32,12 @@ class Game {
     if (guess === this.path[0]) {
       this.path.shift()
       // $('.roomNumber').html(this.path.length);
-      $('.pathway').html(this.path);
+      // $('.correctPath').html(this.path);
+      $('.roomsLeft').html(this.path.length + ' rooms remaining!')
       $('.path').addClass('room' + this.path.length).removeClass('room' + (this.path.length + 1))
     } else {
     this.guesses ++;
+    $('.guesses').html('You have ' + (20 - this.guesses) + ' guesses remaining...');
     }
   }
 }
