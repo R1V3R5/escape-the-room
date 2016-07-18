@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { path } from './path';
+import { up, down, left, right } from './main' 
 
 class Game {
   constructor (path) {
@@ -11,11 +12,21 @@ class Game {
   makeGuess (guess) {
     if (this.path.length === 0) {
       this.gameOver = true;
+      up.off('click');
+      down.off('click');
+      left.off('click');
+      right.off('click');
+      // document.removeEventListener('keydown', function(event){ event.which }, false)
       alert('You Win!');
       return;
     } else if (this.guesses === 20){
       this.gameOver = true;
+      up.off('click');
+      down.off('click');
+      left.off('click');
+      right.off('click');
       alert('Game over!');
+      $('body').off()
       return;
     }
     if (guess === this.path[0]) {

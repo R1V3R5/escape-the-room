@@ -35,17 +35,20 @@ left.on('click', function () {
   game.makeGuess(3)
 });
 
-document.addEventListener('keydown', function(event) {
+// document.addEventListener('keydown', function(event) {
 
-  let keystroke = event.which
+//   let keystroke = event.which
 
-  if (keystroke === 38) {
-    game.makeGuess(0);
-  } else if (keystroke === 39) {
-    game.makeGuess(1)
-  } else if (keystroke === 40) {
-    game.makeGuess(2)
-  } else if (keystroke === 37) {
-    game.makeGuess(3)
-  }
-});
+//   if (keystroke === 38) {
+//     game.makeGuess(0);
+//   } else if (keystroke === 39) {
+//     game.makeGuess(1)
+//   } else if (keystroke === 40) {
+//     game.makeGuess(2)
+//   } else if (keystroke === 37) {
+//     game.makeGuess(3)
+//   }
+// });
+
+
+export { up, down, left, right };
